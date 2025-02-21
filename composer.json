@@ -43,7 +43,6 @@
         "laminas-api-tools/api-tools-rest": "^1.8",
         "laminas-api-tools/api-tools-rpc": "^1.8",
         "laminas-api-tools/api-tools-versioning": "^1.7",
-        "laminas/laminas-db": "^2.8.1",
         "laminas/laminas-eventmanager": "^2.6.3 || ^3.0.1",
         "laminas/laminas-loader": "^2.5.1",
         "laminas/laminas-mvc": "^2.7.9 || ^3.0.2",
@@ -60,6 +59,7 @@
         "vimeo/psalm": "^4.30"
     },
     "suggest": {
+        "laminas/laminas-db": "^2.8.1 if you wish to use the DB-Connected listener",
         "alcaeus/mongo-php-adapter": "^1.0.5, if you are using ext/mongodb and wish to use the MongoConnectedListener.",
         "laminas-api-tools/api-tools-asset-manager": "^1.0, to install the assets used by api-tools-welcome and/or api-tools-admin-ui, until rwoverdijk/assetmanager 1.7 is released",
         "rwoverdijk/assetmanager": "^1.7, to install the assets used by api-tools-welcome and/or api-tools-admin-ui (may not yet be released)"
