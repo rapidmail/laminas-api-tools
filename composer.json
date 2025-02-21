@@ -32,7 +32,7 @@
         }
     },
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+        "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "laminas-api-tools/api-tools-api-problem": "^1.6",
         "laminas-api-tools/api-tools-content-negotiation": "^1.8",
         "laminas-api-tools/api-tools-content-validation": "^1.12",
