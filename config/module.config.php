@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Laminas\ApiTools;
 
-use Laminas\Db\Adapter\AdapterAbstractServiceFactory as DbAdapterAbstractServiceFactory;
+//use Laminas\Db\Adapter\AdapterAbstractServiceFactory as DbAdapterAbstractServiceFactory;
 use Laminas\ServiceManager\Factory\InvokableFactory;
 use ZF\Apigility\MvcAuth\UnauthenticatedListener;
 use ZF\Apigility\MvcAuth\UnauthorizedListener;
@@ -38,11 +38,11 @@ return [
             MvcAuth\UnauthenticatedListener::class => InvokableFactory::class,
             MvcAuth\UnauthorizedListener::class    => InvokableFactory::class,
         ],
-        'abstract_factories' => [
-            DbAdapterAbstractServiceFactory::class, // so that db-connected works "out-of-the-box"
-            DbConnectedResourceAbstractFactory::class,
-            TableGatewayAbstractFactory::class,
-        ],
+        //'abstract_factories' => [
+        //    DbAdapterAbstractServiceFactory::class, // so that db-connected works "out-of-the-box"
+        //    DbConnectedResourceAbstractFactory::class,
+        //    TableGatewayAbstractFactory::class,
+        //],
     ],
     'api-tools'       => [
         'db-connected' => [
